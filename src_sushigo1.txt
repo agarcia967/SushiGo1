@@ -1,0 +1,16 @@
+C:\Users\Anthony\OneDrive\Programming\Java\SushiGo1\com\zalgebar\SushiGo1\Card.java
+C:\Users\Anthony\OneDrive\Programming\Java\SushiGo1\com\zalgebar\SushiGo1\Chopsticks.java
+C:\Users\Anthony\OneDrive\Programming\Java\SushiGo1\com\zalgebar\SushiGo1\Dumplings.java
+C:\Users\Anthony\OneDrive\Programming\Java\SushiGo1\com\zalgebar\SushiGo1\MainTester.java
+C:\Users\Anthony\OneDrive\Programming\Java\SushiGo1\com\zalgebar\SushiGo1\Maki.java
+C:\Users\Anthony\OneDrive\Programming\Java\SushiGo1\com\zalgebar\SushiGo1\MakiType.java
+C:\Users\Anthony\OneDrive\Programming\Java\SushiGo1\com\zalgebar\SushiGo1\Nigiri.java
+C:\Users\Anthony\OneDrive\Programming\Java\SushiGo1\com\zalgebar\SushiGo1\NigiriType.java
+C:\Users\Anthony\OneDrive\Programming\Java\SushiGo1\com\zalgebar\SushiGo1\Player.java
+C:\Users\Anthony\OneDrive\Programming\Java\SushiGo1\com\zalgebar\SushiGo1\Pudding.java
+C:\Users\Anthony\OneDrive\Programming\Java\SushiGo1\com\zalgebar\SushiGo1\Sashimi.java
+C:\Users\Anthony\OneDrive\Programming\Java\SushiGo1\com\zalgebar\SushiGo1\SushiGoGame.java
+C:\Users\Anthony\OneDrive\Programming\Java\SushiGo1\com\zalgebar\SushiGo1\SushiGoTextUI.java
+C:\Users\Anthony\OneDrive\Programming\Java\SushiGo1\com\zalgebar\SushiGo1\SushiGoUI.java
+C:\Users\Anthony\OneDrive\Programming\Java\SushiGo1\com\zalgebar\SushiGo1\Tempura.java
+C:\Users\Anthony\OneDrive\Programming\Java\SushiGo1\com\zalgebar\SushiGo1\Wasabi.java

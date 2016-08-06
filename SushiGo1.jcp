@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+	<settings>
+		<label>SushiGo1</label>
+		<root_path>\</root_path>
+		<output_path>\</output_path>
+		<source_path>\</source_path>
+		<jdkprofile_ref>JDK version 1.8.0_51</jdkprofile_ref>
+		<compiler_ref/>
+		<ant_ref/>
+	</settings>
+	<ant_events/>
+	<run_items>
+		<item run="com.zalgebar.SushiGo1.SushiGoGame"/>
+		<item run="com.zalgebar.SushiGo1.MainTester"/>
+	</run_items>
+	<runtimes>
+		<runtime>
+			<label>&lt;Default&gt;</label>
+			<application_ref>&lt;Default&gt;</application_ref>
+			<applet_ref>&lt;Default&gt;</applet_ref>
+			<debugger_ref>&lt;Default&gt;</debugger_ref>
+			<param/>
+			<run>com.zalgebar.SushiGo1.MainTester</run>
+			<verify>true</verify>
+		</runtime>
+	</runtimes>
+	<libraries/>
+	<files>
+		<include>
+			<folderitem>
+				<path>com</path>
+			</folderitem>
+			<folderitem>
+				<path>com\zalgebar</path>
+			</folderitem>
+			<folderitem>
+				<path>com\zalgebar\SushiGo1</path>
+			</folderitem>
+			<fileitem>
+				<path>com\zalgebar\SushiGo1\Card.java</path>
+				<folder>com\zalgebar\SushiGo1</folder>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\SushiGo1\Chopsticks.java</path>
+				<folder>com\zalgebar\SushiGo1</folder>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\SushiGo1\Dumplings.java</path>
+				<folder>com\zalgebar\SushiGo1</folder>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\SushiGo1\MainTester.java</path>
+				<folder>com\zalgebar\SushiGo1</folder>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\SushiGo1\Maki.java</path>
+				<folder>com\zalgebar\SushiGo1</folder>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\SushiGo1\MakiType.java</path>
+				<folder>com\zalgebar\SushiGo1</folder>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\SushiGo1\Nigiri.java</path>
+				<folder>com\zalgebar\SushiGo1</folder>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\SushiGo1\NigiriType.java</path>
+				<folder>com\zalgebar\SushiGo1</folder>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\SushiGo1\Player.java</path>
+				<folder>com\zalgebar\SushiGo1</folder>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\SushiGo1\Pudding.java</path>
+				<folder>com\zalgebar\SushiGo1</folder>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\SushiGo1\Sashimi.java</path>
+				<folder>com\zalgebar\SushiGo1</folder>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\SushiGo1\SushiGoGame.java</path>
+				<folder>com\zalgebar\SushiGo1</folder>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\SushiGo1\SushiGoTextUI.java</path>
+				<folder>com\zalgebar\SushiGo1</folder>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\SushiGo1\SushiGoUI.java</path>
+				<folder>com\zalgebar\SushiGo1</folder>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\SushiGo1\Tempura.java</path>
+				<folder>com\zalgebar\SushiGo1</folder>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\SushiGo1\Wasabi.java</path>
+				<folder>com\zalgebar\SushiGo1</folder>
+			</fileitem>
+		</include>
+		<exclude>
+			<fileitem>
+				<path>com\zalgebar\INIManager.java</path>
+			</fileitem>
+		</exclude>
+	</files>
+	<tasks>
+		<todotaskitem>
+			<description>TODO: Add your code here</description>
+			<filepath>SushiGoMainText.java</filepath>
+			<line>57</line>
+			<timestamp>1468463116</timestamp>
+		</todotaskitem>
+		<todotaskitem>
+			<description>TODO: Add your code here</description>
+			<filepath>com\zalgebar\SushiGo1\Nigiri.java</filepath>
+			<line>21</line>
+			<timestamp>1468466998</timestamp>
+		</todotaskitem>
+		<todotaskitem>
+			<description>TODO: Add your code here</description>
+			<filepath>com\zalgebar\SushiGo1\SushiGoMain.java</filepath>
+			<line>42</line>
+			<timestamp>1468468950</timestamp>
+		</todotaskitem>
+		<todotaskitem>
+			<description>TODO: Add your code here</description>
+			<filepath>com\zalgebar\SushiGo1\SushiGoMain.java</filepath>
+			<line>112</line>
+			<timestamp>1468468950</timestamp>
+		</todotaskitem>
+		<todotaskitem>
+			<description>TODO: Add your code here</description>
+			<filepath>com\zalgebar\SushiGo1\SushiGoTextIUI.java</filepath>
+			<line>75</line>
+			<timestamp>1468909779</timestamp>
+		</todotaskitem>
+		<todotaskitem>
+			<description>TODO: Add your code here</description>
+			<filepath>com\zalgebar\SushiGo1\SushiGoTextIUI.java</filepath>
+			<line>114</line>
+			<timestamp>1468909779</timestamp>
+		</todotaskitem>
+		<todotaskitem>
+			<description>TODO: Add your code here</description>
+			<filepath>com\zalgebar\SushiGo1\SushiGoTextIUI.java</filepath>
+			<line>128</line>
+			<timestamp>1468909779</timestamp>
+		</todotaskitem>
+		<todotaskitem>
+			<description>TODO: Add your code here</description>
+			<filepath>com\zalgebar\SushiGo1\SushiGoTextIUI.java</filepath>
+			<line>141</line>
+			<timestamp>1468909779</timestamp>
+		</todotaskitem>
+		<todotaskitem>
+			<description>TODO: Add your code here</description>
+			<filepath>com\zalgebar\SushiGo1\SushiGoGame.java</filepath>
+			<line>327</line>
+			<timestamp>1469862377</timestamp>
+		</todotaskitem>
+		<todotaskitem>
+			<description>TODO: Add your code here</description>
+			<filepath>com\zalgebar\SushiGo1\SushiGoGame.java</filepath>
+			<line>339</line>
+			<timestamp>1469862377</timestamp>
+		</todotaskitem>
+		<todotaskitem>
+			<description>TODO: Add your code here</description>
+			<filepath>com\zalgebar\SushiGo1\SushiGoGame.java</filepath>
+			<line>352</line>
+			<timestamp>1469862377</timestamp>
+		</todotaskitem>
+	</tasks>
+</project>
