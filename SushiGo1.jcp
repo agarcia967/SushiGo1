@@ -39,6 +39,20 @@
 				<path>com\zalgebar\SushiGo1</path>
 			</folderitem>
 			<fileitem>
+				<path>Deck.ini</path>
+			</fileitem>
+			<fileitem>
+				<path>en_us.ini</path>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\INIManager.java</path>
+				<folder>com\zalgebar</folder>
+			</fileitem>
+			<fileitem>
+				<path>com\zalgebar\INIManager1.java</path>
+				<folder>com\zalgebar</folder>
+			</fileitem>
+			<fileitem>
 				<path>com\zalgebar\SushiGo1\Card.java</path>
 				<folder>com\zalgebar\SushiGo1</folder>
 			</fileitem>
@@ -105,7 +119,7 @@
 		</include>
 		<exclude>
 			<fileitem>
-				<path>com\zalgebar\INIManager.java</path>
+				<path>com\zalgebar\INIManager.class</path>
 			</fileitem>
 		</exclude>
 	</files>

@@ -18,12 +18,6 @@
 				<path>com\zalgebar\SushiGo1</path>
 			</folderitem>
 			<folderitem>
-				<path>com\zalgebar\com</path>
-			</folderitem>
-			<folderitem>
-				<path>com\zalgebar\com\zalgebar</path>
-			</folderitem>
-			<folderitem>
 				<path>.git</path>
 			</folderitem>
 			<folderitem>
@@ -51,16 +45,172 @@
 				<path>.git\objects</path>
 			</folderitem>
 			<folderitem>
+				<path>.git\objects\03</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\05</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\09</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\0e</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\0f</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\15</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\16</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\19</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\1b</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\1f</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\27</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\29</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\3e</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\42</path>
+			</folderitem>
+			<folderitem>
 				<path>.git\objects\4e</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\4f</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\56</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\57</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\5b</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\5d</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\5f</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\60</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\64</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\6e</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\70</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\71</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\72</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\73</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\79</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\7b</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\7c</path>
 			</folderitem>
 			<folderitem>
 				<path>.git\objects\7d</path>
 			</folderitem>
 			<folderitem>
+				<path>.git\objects\7f</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\89</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\8c</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\8e</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\93</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\95</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\97</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\98</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\a6</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\a7</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\a9</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\ac</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\ad</path>
+			</folderitem>
+			<folderitem>
 				<path>.git\objects\bd</path>
 			</folderitem>
 			<folderitem>
+				<path>.git\objects\c1</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\c7</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\cb</path>
+			</folderitem>
+			<folderitem>
 				<path>.git\objects\cd</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\d3</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\d7</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\eb</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\f2</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\f9</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\fd</path>
 			</folderitem>
 			<folderitem>
 				<path>.git\objects\info</path>
@@ -83,54 +233,6 @@
 			<folderitem>
 				<path>.git\refs\tags</path>
 			</folderitem>
-			<folderitem>
-				<path>SushiGo</path>
-			</folderitem>
-			<folderitem>
-				<path>SushiGo\.git</path>
-			</folderitem>
-			<folderitem>
-				<path>SushiGo\.git\hooks</path>
-			</folderitem>
-			<folderitem>
-				<path>SushiGo\.git\info</path>
-			</folderitem>
-			<folderitem>
-				<path>SushiGo\.git\logs</path>
-			</folderitem>
-			<folderitem>
-				<path>SushiGo\.git\logs\refs</path>
-			</folderitem>
-			<folderitem>
-				<path>SushiGo\.git\logs\refs\heads</path>
-			</folderitem>
-			<folderitem>
-				<path>SushiGo\.git\objects</path>
-			</folderitem>
-			<folderitem>
-				<path>SushiGo\.git\objects\39</path>
-			</folderitem>
-			<folderitem>
-				<path>SushiGo\.git\objects\bd</path>
-			</folderitem>
-			<folderitem>
-				<path>SushiGo\.git\objects\d9</path>
-			</folderitem>
-			<folderitem>
-				<path>SushiGo\.git\objects\info</path>
-			</folderitem>
-			<folderitem>
-				<path>SushiGo\.git\objects\pack</path>
-			</folderitem>
-			<folderitem>
-				<path>SushiGo\.git\refs</path>
-			</folderitem>
-			<folderitem>
-				<path>SushiGo\.git\refs\heads</path>
-			</folderitem>
-			<folderitem>
-				<path>SushiGo\.git\refs\tags</path>
-			</folderitem>
 		</project>
 	</projects>
 	<open_files>
@@ -144,7 +246,7 @@
 			<path>com\zalgebar\SushiGo1\SushiGoGame.java</path>
 			<source>true</source>
 			<index>1</index>
-			<active>true</active>
+			<active>false</active>
 		</docitem>
 		<docitem>
 			<path>com\zalgebar\SushiGo1\SushiGoUI.java</path>
@@ -162,7 +264,7 @@
 			<path>com\zalgebar\SushiGo1\MainTester.java</path>
 			<source>true</source>
 			<index>4</index>
-			<active>false</active>
+			<active>true</active>
 		</docitem>
 	</open_files>
 </workspace_user>
