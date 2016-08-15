@@ -53,6 +53,10 @@
 				<folder>com\zalgebar</folder>
 			</fileitem>
 			<fileitem>
+				<path>com\zalgebar\INIManager2.java</path>
+				<folder>com\zalgebar</folder>
+			</fileitem>
+			<fileitem>
 				<path>com\zalgebar\SushiGo1\Card.java</path>
 				<folder>com\zalgebar\SushiGo1</folder>
 			</fileitem>

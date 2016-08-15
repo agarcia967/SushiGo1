@@ -81,6 +81,9 @@
 				<path>.git\objects\29</path>
 			</folderitem>
 			<folderitem>
+				<path>.git\objects\34</path>
+			</folderitem>
+			<folderitem>
 				<path>.git\objects\3e</path>
 			</folderitem>
 			<folderitem>
@@ -114,6 +117,9 @@
 				<path>.git\objects\64</path>
 			</folderitem>
 			<folderitem>
+				<path>.git\objects\65</path>
+			</folderitem>
+			<folderitem>
 				<path>.git\objects\6e</path>
 			</folderitem>
 			<folderitem>
@@ -127,6 +133,9 @@
 			</folderitem>
 			<folderitem>
 				<path>.git\objects\73</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\75</path>
 			</folderitem>
 			<folderitem>
 				<path>.git\objects\79</path>
@@ -195,10 +204,16 @@
 				<path>.git\objects\cd</path>
 			</folderitem>
 			<folderitem>
+				<path>.git\objects\ce</path>
+			</folderitem>
+			<folderitem>
 				<path>.git\objects\d3</path>
 			</folderitem>
 			<folderitem>
 				<path>.git\objects\d7</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\db</path>
 			</folderitem>
 			<folderitem>
 				<path>.git\objects\eb</path>
@@ -264,6 +279,24 @@
 			<path>com\zalgebar\SushiGo1\MainTester.java</path>
 			<source>true</source>
 			<index>4</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>com\zalgebar\SushiGo1\Maki.java</path>
+			<source>true</source>
+			<index>5</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>com\zalgebar\INIManager.java</path>
+			<source>true</source>
+			<index>6</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>com\zalgebar\INIManager2.java</path>
+			<source>true</source>
+			<index>7</index>
 			<active>true</active>
 		</docitem>
 	</open_files>

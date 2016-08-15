@@ -17,11 +17,6 @@
  * <li>Updated backend data structure to be nested HashMaps</li>
  * </ul>
  *
- * <strong>Update 2.5</strong>
- * <ul>
- * <li>Added a generic Collection constructor</li>
- * </ul>
- *
  * @author	Anthony R Garcia
  * @version 2.50 2016/8/13
  */
@@ -38,7 +33,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class INIManager {
+public class INIManager2 {
 	public static boolean DEBUG = false;
 	private static boolean INDICES = false;
 
@@ -50,24 +45,14 @@ public class INIManager {
 	/**
 	 * Creates a new INI file manager. Initializes the headers.
 	 */
-	public INIManager() {
+	public INIManager2() {
 		this(new LinkedList<String>());
-	}
-	
-	/**
-	 * Creates a new INI file manager. Initializes with a list of headers.
-	 */
-	public INIManager(Collection<String> headers){
-		this.items = new HashMap<String,HashMap<String,String>>();
-		for(String h : headers){
-			this.items.put(h.toUpperCase(),new HashMap<String,String>());
-		}
 	}
 
 	/**
 	 * Creates a new INI file manager. Initializes with a list of headers.
 	 */
-	public INIManager(LinkedList<String> headers) {
+	public INIManager2(LinkedList<String> headers) {
 		this.items = new HashMap<String,HashMap<String,String>>();
 		if(headers==null) return;
 		for(String h : headers){
@@ -78,7 +63,7 @@ public class INIManager {
 	/**
 	 * Creates a new INI file manager. Initializes one header and its keys.
 	 */
-	public INIManager(String header, LinkedList<String> keys) {
+	public INIManager2(String header, LinkedList<String> keys) {
 		this.items = new HashMap<String,HashMap<String,String>>();
 		if(header==null) return;
 		if(keys==null) return;
