@@ -45,6 +45,9 @@
 				<path>.git\objects</path>
 			</folderitem>
 			<folderitem>
+				<path>.git\objects\01</path>
+			</folderitem>
+			<folderitem>
 				<path>.git\objects\03</path>
 			</folderitem>
 			<folderitem>
@@ -78,6 +81,9 @@
 				<path>.git\objects\27</path>
 			</folderitem>
 			<folderitem>
+				<path>.git\objects\28</path>
+			</folderitem>
+			<folderitem>
 				<path>.git\objects\29</path>
 			</folderitem>
 			<folderitem>
@@ -90,10 +96,16 @@
 				<path>.git\objects\42</path>
 			</folderitem>
 			<folderitem>
+				<path>.git\objects\4b</path>
+			</folderitem>
+			<folderitem>
 				<path>.git\objects\4e</path>
 			</folderitem>
 			<folderitem>
 				<path>.git\objects\4f</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\50</path>
 			</folderitem>
 			<folderitem>
 				<path>.git\objects\56</path>
@@ -114,10 +126,16 @@
 				<path>.git\objects\60</path>
 			</folderitem>
 			<folderitem>
+				<path>.git\objects\63</path>
+			</folderitem>
+			<folderitem>
 				<path>.git\objects\64</path>
 			</folderitem>
 			<folderitem>
 				<path>.git\objects\65</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\6a</path>
 			</folderitem>
 			<folderitem>
 				<path>.git\objects\6e</path>
@@ -195,6 +213,9 @@
 				<path>.git\objects\c1</path>
 			</folderitem>
 			<folderitem>
+				<path>.git\objects\c2</path>
+			</folderitem>
+			<folderitem>
 				<path>.git\objects\c7</path>
 			</folderitem>
 			<folderitem>
@@ -213,7 +234,16 @@
 				<path>.git\objects\d7</path>
 			</folderitem>
 			<folderitem>
+				<path>.git\objects\d8</path>
+			</folderitem>
+			<folderitem>
 				<path>.git\objects\db</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\de</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\e6</path>
 			</folderitem>
 			<folderitem>
 				<path>.git\objects\eb</path>
@@ -291,12 +321,6 @@
 			<path>com\zalgebar\INIManager.java</path>
 			<source>true</source>
 			<index>6</index>
-			<active>false</active>
-		</docitem>
-		<docitem>
-			<path>com\zalgebar\INIManager2.java</path>
-			<source>true</source>
-			<index>7</index>
 			<active>true</active>
 		</docitem>
 	</open_files>

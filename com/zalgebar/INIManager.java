@@ -201,12 +201,12 @@ public class INIManager {
 				if(DEBUG) System.out.println(" Line: " + myLine);
 
 				if(myLine.startsWith("[") && myLine.endsWith("]")){
-					myHeader = myLine.substring(1,myLine.length()-1).toUpperCase();
+					myHeader = myLine.replace("[","").replace("]","").toUpperCase();
 					if(DEBUG) System.out.println("  Header: " + myHeader);
 					this.addHeader(myHeader);
 					hasHeader = true;
 				}
-				else if(indexOfEquals>0){
+				else if(indexOfEquals>=0){
 					if(!hasHeader){
 						System.out.println(" WARNING: File not formatted properly. " +
 							"No header before key declaration. Line: "+lineNumber);
@@ -219,6 +219,10 @@ public class INIManager {
 
 					this.addValue(myHeader,myKey,myValue);
 					keysRead++;
+				}
+				else if(indexOfEquals<0){
+					if(DEBUG) System.out.println(" WARNING: No equals found on line "+lineNumber
+						+"\nKey/Value pair not read.");
 				}
 				else if(myLine.equals("")){
 					//Do nothing if a blank line is found
