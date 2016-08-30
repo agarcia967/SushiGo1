@@ -9,10 +9,8 @@ public class SushiGoTextUI implements SushiGoUI {
 	/**
 	 * Method displayCardsPlayed
 	 *
-	 *
 	 * @param playerName
 	 * @param cards
-	 *
 	 */
 	public void displayCardsPlayed(String playerName, LinkedList cards) {
 		System.out.println(playerName);
@@ -22,9 +20,7 @@ public class SushiGoTextUI implements SushiGoUI {
 	/**
 	 * Method displayGameTitleText
 	 *
-	 *
 	 * @param title
-	 *
 	 */
 	public void displayGameTitleText(String title) {
 		System.out.println(title);
@@ -33,9 +29,7 @@ public class SushiGoTextUI implements SushiGoUI {
 	/**
 	 * Method displayDeckActionText
 	 *
-	 *
 	 * @param deckAction
-	 *
 	 */
 	public void displayDeckActionText(String deckAction) {
 		System.out.println(deckAction);
@@ -43,7 +37,6 @@ public class SushiGoTextUI implements SushiGoUI {
 
 	/**
 	 * Method displayScoreAll
-	 *
 	 *
 	 * @param players
 	 */
@@ -65,7 +58,6 @@ public class SushiGoTextUI implements SushiGoUI {
 	/**
 	 * Method displayScorePlayer
 	 *
-	 *
 	 * @param player
 	 */
 	public void displayScorePlayer(Player player) {
@@ -75,14 +67,12 @@ public class SushiGoTextUI implements SushiGoUI {
 	/**
 	 * Method userInputBoolean
 	 *
-	 *
 	 * @param prompt
 	 * @param yesDisplayText
 	 * @param noDisplayText
 	 * @param invalidText
 	 *
 	 * @return
-	 *
 	 */
 	public boolean userInputBoolean(String prompt, String yesDisplayText, String noDisplayText, String invalidText) {
 		System.out.println(prompt+" ("+yesDisplayText+"/"+noDisplayText+")");
@@ -109,8 +99,8 @@ public class SushiGoTextUI implements SushiGoUI {
 	 * @param min
 	 * @param max
 	 * @param invalidText
-	 * @return
 	 *
+	 * @return
 	 */
 	public int userInputInteger(String prompt, int min, int max, String invalidText) {
 		System.out.println(prompt);
@@ -136,13 +126,11 @@ public class SushiGoTextUI implements SushiGoUI {
 	/**
 	 * Method userInputSelectCardFromHand
 	 *
-	 *
 	 * @param prompt
 	 * @param cards
 	 * @param invalidText
 	 *
 	 * @return
-	 *
 	 */
 	public int userInputSelectCardFromHand(String prompt, LinkedList cards, String invalidText) {
 		System.out.println(prompt + "\n" + cards.toString());
@@ -168,11 +156,9 @@ public class SushiGoTextUI implements SushiGoUI {
 	/**
 	 * Method userInputString
 	 *
-	 *
 	 * @param prompt
 	 *
 	 * @return
-	 *
 	 */
 	public String userInputString(String prompt) {
 		System.out.println(prompt);

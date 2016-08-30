@@ -63,6 +63,9 @@
 				<path>.git\objects\0f</path>
 			</folderitem>
 			<folderitem>
+				<path>.git\objects\10</path>
+			</folderitem>
+			<folderitem>
 				<path>.git\objects\15</path>
 			</folderitem>
 			<folderitem>
@@ -73,6 +76,9 @@
 			</folderitem>
 			<folderitem>
 				<path>.git\objects\1b</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\1c</path>
 			</folderitem>
 			<folderitem>
 				<path>.git\objects\1f</path>
@@ -192,6 +198,9 @@
 				<path>.git\objects\98</path>
 			</folderitem>
 			<folderitem>
+				<path>.git\objects\9d</path>
+			</folderitem>
+			<folderitem>
 				<path>.git\objects\a6</path>
 			</folderitem>
 			<folderitem>
@@ -205,6 +214,9 @@
 			</folderitem>
 			<folderitem>
 				<path>.git\objects\ad</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\b6</path>
 			</folderitem>
 			<folderitem>
 				<path>.git\objects\bd</path>
@@ -240,10 +252,19 @@
 				<path>.git\objects\db</path>
 			</folderitem>
 			<folderitem>
+				<path>.git\objects\dc</path>
+			</folderitem>
+			<folderitem>
 				<path>.git\objects\de</path>
 			</folderitem>
 			<folderitem>
+				<path>.git\objects\e1</path>
+			</folderitem>
+			<folderitem>
 				<path>.git\objects\e6</path>
+			</folderitem>
+			<folderitem>
+				<path>.git\objects\ea</path>
 			</folderitem>
 			<folderitem>
 				<path>.git\objects\eb</path>

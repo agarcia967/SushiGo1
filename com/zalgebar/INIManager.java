@@ -1,6 +1,6 @@
 /**
  * INIManager.java
- * Manages a standardly formatted *.ini file that can be used in any Java program.
+ * Manages any standardly formatted *.ini file that can be used in any Java program.
  * It should be noted that the file must be formatted using the .ini standard.
  * This manager can:
  * <ul>
@@ -11,6 +11,28 @@
  * <li>Read back values that have been read</li>
  * <li>Overwrite values given a new value and its key name and header</li>
  * </ul>
+ *
+ * Suggested Method Call Order 1:
+ * <ol>
+ * <li>Read from file.</li>
+ * <li>Get data from the INIManager object.</li>
+ * </ol>
+ *
+ * SMCO 2:
+ * <ol>
+ * <li>Use any contructor to create your items.</li>
+ * <li>Add (headers and) key/values for each header.</li>
+ * <li>Write to file.</li>
+ * </ol>
+ *
+ * SMCO 3:
+ * <ol>
+ * <li>Use any contructor to create your items.</li>
+ * <li>Add (headers and) key/values for each header.</li>
+ * <li>Read from file.</li>
+ * <li>Verify that the file matches (or exceeds) number of keys expected.</li>
+ * <li>Get data from the INIManager object.</li>
+ * </ol>
  *
  * <strong>Update 2.0</strong>
  * <ul>
@@ -59,26 +81,16 @@ public class INIManager {
 	 */
 	public INIManager(Collection<String> headers){
 		this.items = new HashMap<String,HashMap<String,String>>();
+		if(headers==null) return;
 		for(String h : headers){
 			this.items.put(h.toUpperCase(),new HashMap<String,String>());
 		}
 	}
 
 	/**
-	 * Creates a new INI file manager. Initializes with a list of headers.
-	 */
-	public INIManager(LinkedList<String> headers) {
-		this.items = new HashMap<String,HashMap<String,String>>();
-		if(headers==null) return;
-		for(String h : headers){
-			items.put(h.toUpperCase(),new HashMap<String,String>());
-		}
-	}
-
-	/**
 	 * Creates a new INI file manager. Initializes one header and its keys.
 	 */
-	public INIManager(String header, LinkedList<String> keys) {
+	public INIManager(String header, Collection<String> keys) {
 		this.items = new HashMap<String,HashMap<String,String>>();
 		if(header==null) return;
 		if(keys==null) return;
@@ -96,11 +108,13 @@ public class INIManager {
 	public boolean addHeader(String header){
 		if(DEBUG) System.out.println("addHeader('"+header+"') called");
 		header = header.toUpperCase();
+		if(header.equals("")) header="NOHEADER";
 		if(this.items.containsKey(header)){
 			if(DEBUG) System.out.println("WARNING: Header '" + header +
 				"' already exists. Header NOT added!");
 			return false;
 		}
+		//initialize the new header for adding keys to later
 		this.items.put(header,new HashMap<String,String>());
 		return true;
 	}
@@ -116,17 +130,16 @@ public class INIManager {
 	public boolean addKey(String header, String key){
 		if(DEBUG) System.out.println("addKey('"+header+"', '"+key+"') called");
 		header = header.toUpperCase();
-		if(!this.items.containsKey(header)){
-			this.addHeader(header);
-		}
-
 		//Check if the key already exists
-		if(this.items.get(header).containsKey(key)){ //We may assume from the code above that the header exists.
-			if(DEBUG) System.out.println(" WARNING: Key '" + key +
+		if(!this.items.containsKey(header)) this.addHeader(header);
+
+		//We may assume from the code above that the header is not null
+		// (If it was, it would have been created)
+		if(this.items.get(header).containsKey(key)){
+			if(DEBUG) System.out.println(" WARNING: Key '"+key+
 				"' already exists. Key NOT added!");
 			return false;
-		}
-		else{
+		}else{
 			this.items.get(header).put(key,"");
 			this.totalKeys++;
 		}
@@ -147,10 +160,10 @@ public class INIManager {
 	 */
 	public boolean addKeys(String header, LinkedList<String> keys){
 		if(DEBUG) System.out.println("addKeys('"+header+",["+keys.size()+"keys]') called");
-		boolean returnable = true;  //will be set to false if any key already exists
+		boolean returnable = true;		//will be set to false if any key already exists
 		for(String k : keys){
 			if(!this.addKey(header.toUpperCase(), k)){
-				returnable = false; //this is where it's set
+				returnable = false;		//this is where it's set
 			}
 		}
 		return returnable;
@@ -174,7 +187,7 @@ public class INIManager {
 
 	/**
 	 * Using {@link FileInputStream} and {@link Scanner} reads a file given the
-	 * file name as the parameter.
+	 * file name as the parameter. Proper filename convention to be determined by user.
 	 *
 	 * @see				java.io.FileInputStream
 	 * @see				java.io.Scanner
@@ -184,33 +197,34 @@ public class INIManager {
 	 */
 	public boolean readFile(String fileName){
 		if(DEBUG) System.out.println("readFile('"+fileName+"') called");
-		if(!fileName.endsWith(".ini")) fileName = fileName+".ini";
 		FileInputStream fileIn;
+		Scanner scanner;
+		int lineNumber = 0;
+		boolean hasHeader = false;
+		String myHeader = "";
+		String myLine;
+		int indexOfEquals;
 
 		try{
 			fileIn = new FileInputStream(fileName);
-			Scanner scanner = new Scanner(fileIn);
-			int lineNumber = 0;
-			boolean hasHeader = false;
-			String myHeader = "";
+			scanner = new Scanner(fileIn);
 
 			while(scanner.hasNext()){
-				String myLine = scanner.nextLine().trim();
 				lineNumber++;
-				int indexOfEquals = myLine.indexOf("=");
+				myLine = scanner.nextLine().trim();
 				if(DEBUG) System.out.println(" Line: " + myLine);
+				indexOfEquals = myLine.indexOf("=");
 
-				if(myLine.startsWith("[") && myLine.endsWith("]")){
+				if(myLine.startsWith("[") && myLine.endsWith("]") && myLine.lastIndexOf("]")>1){
 					myHeader = myLine.replace("[","").replace("]","").toUpperCase();
 					if(DEBUG) System.out.println("  Header: " + myHeader);
 					this.addHeader(myHeader);
 					hasHeader = true;
 				}
 				else if(indexOfEquals>=0){
-					if(!hasHeader){
-						System.out.println(" WARNING: File not formatted properly. " +
-							"No header before key declaration. Line: "+lineNumber);
-					}
+					if(!hasHeader) System.out.println(" WARNING: No header before key declaration."+
+						"\n Line: "+lineNumber);
+					
 					String myKey = myLine.substring(0,indexOfEquals).trim();
 					if(DEBUG) System.out.println("  Key: " + myKey);
 
@@ -220,22 +234,31 @@ public class INIManager {
 					this.addValue(myHeader,myKey,myValue);
 					keysRead++;
 				}
-				else if(indexOfEquals<0){
-					if(DEBUG) System.out.println(" WARNING: No equals found on line "+lineNumber
-						+"\nKey/Value pair not read.");
-				}
 				else if(myLine.equals("")){
 					//Do nothing if a blank line is found
 				}
 				else{
-					if(DEBUG) System.out.println(" WARNING: File not formatted properly. Line: "+lineNumber);
+					if(DEBUG) System.out.println(" WARNING: Line not formatted properly.");
+					if(DEBUG) System.out.println("\n    Line: "+lineNumber);
+					if(indexOfEquals<0){
+						if(DEBUG) System.out.println("        : No '=' found.");
+					}
+					if(!myLine.endsWith("]")){
+						if(DEBUG) System.out.println("        : No terminating ']' found.");
+					}
+					if(!myLine.startsWith("[")){
+						if(DEBUG) System.out.println("        : No beginning '[' found.");
+					}
+					if(myLine.lastIndexOf("]")<=1){
+						if(DEBUG) System.out.println("        : No characters between the '[' and ']'.");
+					}
 				}
 			}
 			scanner.close();
 			fileIn.close();
 		}
 		catch(FileNotFoundException e){
-			System.out.println(" ERROR: File 404 - " + e.toString());
+			System.out.println(" ERROR: File not found - " + e.toString());
 			return false;
 		}
 		catch(IOException e){
@@ -247,7 +270,7 @@ public class INIManager {
 
 	/**
 	 * Using {@link FileOutputStream} and {@link PrintWriter}, writes a file given the
-	 * file name as the parameter.
+	 * file name as the parameter. Proper filename convention to be determined by user.
 	 *
 	 * @see				java.io.FileOutputStream
 	 * @see				java.io.PrintWriter
@@ -256,24 +279,21 @@ public class INIManager {
 	 * @return			Returns true if the file write was successful.
 	 */
 	public boolean writeFile(String fileName){
-		FileOutputStream fileOut;
 		if(DEBUG) System.out.println("writeFile('"+fileName+"') called");
-		if(!fileName.endsWith(".ini")) fileName = fileName+".ini";
+		FileOutputStream fileOut;
+		PrintWriter pw;
+		StringBuilder sb;
 		try{
 			fileOut = new FileOutputStream(fileName);
-			PrintWriter pw = new PrintWriter(fileOut);
-			//create a list of headers
-			LinkedList<String> headers = new LinkedList<String>(this.items.keySet());
+			pw = new PrintWriter(fileOut);
 			//iterate through the headers and write them to file
-			for(String h : headers){
-				StringBuilder sb = new StringBuilder();
+			for(String h : this.items.keySet()){
+				sb = new StringBuilder();
 				sb.append("[" + h.toUpperCase() + "]");
 				if(DEBUG) System.out.println(" "+sb);
 				pw.println(sb.toString());
-				//create a list of keys for this header
-				LinkedList<String> keys = new LinkedList<String>(this.items.get(h).keySet());
-				//iterate through the keys and write them to file
-				for(String k : keys){
+				//iterate through the key under this header and write them to file
+				for(String k : this.items.get(h).keySet()){
 					sb = new StringBuilder();
 					sb.append(k);
 					sb.append(" = ");
@@ -286,11 +306,11 @@ public class INIManager {
 			fileOut.close();
 		}
 		catch(FileNotFoundException e){
-			System.out.println("ERROR: File 404 - " + e.toString());
+			System.out.println("ERROR: File not found - " + e.toString());
 			return false;
 		}
 		catch(IOException e){
-			System.out.println("ERROR: Write error - " + e.toString());
+			System.out.println("ERROR: File write error - " + e.toString());
 			return false;
 		}
 		return true;
@@ -300,7 +320,7 @@ public class INIManager {
 	 * Internally used to get the index of a header.
 	 *
 	 * @deprecated	As of release 2.0 this method is no longer used.
-	 * @return	Returns the index of the specified header.
+	 * @return		Returns the index of the specified header.
 	 */
 	@Deprecated
 	private int indexOfHeader(String header){/*
@@ -313,7 +333,8 @@ public class INIManager {
 	/**
 	 * Internally used to get the index of a key given the header.
 	 *
-	 * @return	Returns the index of the specified key under the specified header.
+	  *@deprecated	As of release 2.0 this method is no longer used.
+	 * @return		Returns the index of the specified key under the specified header.
 	 */
 	@Deprecated
 	private int indexOfKey(String header, String key){/*
@@ -361,8 +382,7 @@ public class INIManager {
 		if(DEBUG) System.out.println("getValue('"+header+"','"+key+"') called");
 		header = header.toUpperCase();
 		if(!this.items.containsKey(header)) return null;
-		if(!this.items.get(header).containsKey(key)) return null;
-		return this.items.get(header).get(key);
+		return this.items.get(header).get(key);//.get() returns null if not found
 	}
 
 	/**
@@ -385,7 +405,7 @@ public class INIManager {
 	 * @see		#addKey(String header, String key)
 	 * @see		#addKeys(String header, LinkedList<String> keys)
 	 *
-	 * @return			Returns true if all keys have been read from file.
+	 * @return	Returns true if all keys have been read from file.
 	 */
 	public boolean verifyFileRead(){
 		if(DEBUG) System.out.println("verifyFileRead() called");
