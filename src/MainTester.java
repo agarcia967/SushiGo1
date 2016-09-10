@@ -14,6 +14,7 @@ public class MainTester {
 	 */
 	public static void main(String[] args) {
 		SushiGoGame game = new SushiGoGame(new SushiGoTextUI());
+		game.DEBUG = true;
 		game.play();
 	}
 }

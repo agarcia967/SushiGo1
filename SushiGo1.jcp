@@ -30,13 +30,7 @@
 	<files>
 		<include>
 			<folderitem>
-				<path>com</path>
-			</folderitem>
-			<folderitem>
-				<path>com\zalgebar</path>
-			</folderitem>
-			<folderitem>
-				<path>com\zalgebar\SushiGo1</path>
+				<path>src</path>
 			</folderitem>
 			<fileitem>
 				<path>Deck.ini</path>
@@ -45,85 +39,91 @@
 				<path>en_us.ini</path>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\INIManager.java</path>
-				<folder>com\zalgebar</folder>
+				<path>src\Card.java</path>
+				<folder>src</folder>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\INIManager1.java</path>
-				<folder>com\zalgebar</folder>
+				<path>src\Chopsticks.java</path>
+				<folder>src</folder>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\INIManager2.java</path>
-				<folder>com\zalgebar</folder>
+				<path>src\Dumplings.java</path>
+				<folder>src</folder>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\SushiGo1\Card.java</path>
-				<folder>com\zalgebar\SushiGo1</folder>
+				<path>src\INIManager.java</path>
+				<folder>src</folder>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\SushiGo1\Chopsticks.java</path>
-				<folder>com\zalgebar\SushiGo1</folder>
+				<path>src\MainTester.java</path>
+				<folder>src</folder>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\SushiGo1\Dumplings.java</path>
-				<folder>com\zalgebar\SushiGo1</folder>
+				<path>src\Maki.java</path>
+				<folder>src</folder>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\SushiGo1\MainTester.java</path>
-				<folder>com\zalgebar\SushiGo1</folder>
+				<path>src\MakiType.java</path>
+				<folder>src</folder>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\SushiGo1\Maki.java</path>
-				<folder>com\zalgebar\SushiGo1</folder>
+				<path>src\Nigiri.java</path>
+				<folder>src</folder>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\SushiGo1\MakiType.java</path>
-				<folder>com\zalgebar\SushiGo1</folder>
+				<path>src\NigiriType.java</path>
+				<folder>src</folder>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\SushiGo1\Nigiri.java</path>
-				<folder>com\zalgebar\SushiGo1</folder>
+				<path>src\Player.java</path>
+				<folder>src</folder>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\SushiGo1\NigiriType.java</path>
-				<folder>com\zalgebar\SushiGo1</folder>
+				<path>src\Pudding.java</path>
+				<folder>src</folder>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\SushiGo1\Player.java</path>
-				<folder>com\zalgebar\SushiGo1</folder>
+				<path>src\Sashimi.java</path>
+				<folder>src</folder>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\SushiGo1\Pudding.java</path>
-				<folder>com\zalgebar\SushiGo1</folder>
+				<path>src\SushiGoGame.java</path>
+				<folder>src</folder>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\SushiGo1\Sashimi.java</path>
-				<folder>com\zalgebar\SushiGo1</folder>
+				<path>src\SushiGoTextUI.java</path>
+				<folder>src</folder>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\SushiGo1\SushiGoGame.java</path>
-				<folder>com\zalgebar\SushiGo1</folder>
+				<path>src\SushiGoUI.java</path>
+				<folder>src</folder>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\SushiGo1\SushiGoTextUI.java</path>
-				<folder>com\zalgebar\SushiGo1</folder>
+				<path>src\Tempura.java</path>
+				<folder>src</folder>
 			</fileitem>
 			<fileitem>
-				<path>com\zalgebar\SushiGo1\SushiGoUI.java</path>
-				<folder>com\zalgebar\SushiGo1</folder>
-			</fileitem>
-			<fileitem>
-				<path>com\zalgebar\SushiGo1\Tempura.java</path>
-				<folder>com\zalgebar\SushiGo1</folder>
-			</fileitem>
-			<fileitem>
-				<path>com\zalgebar\SushiGo1\Wasabi.java</path>
-				<folder>com\zalgebar\SushiGo1</folder>
+				<path>src\Wasabi.java</path>
+				<folder>src</folder>
 			</fileitem>
 		</include>
 		<exclude>
+			<folderitem>
+				<path>com</path>
+				<dir/>
+			</folderitem>
+			<folderitem>
+				<path>com\zalgebar\SushiGo1</path>
+				<dir/>
+			</folderitem>
 			<fileitem>
 				<path>com\zalgebar\INIManager.class</path>
+			</fileitem>
+			<fileitem>
+				<path>src\INIManager1.java</path>
+			</fileitem>
+			<fileitem>
+				<path>src\INIManager2.java</path>
 			</fileitem>
 		</exclude>
 	</files>
@@ -133,12 +133,6 @@
 			<filepath>SushiGoMainText.java</filepath>
 			<line>57</line>
 			<timestamp>1468463116</timestamp>
-		</todotaskitem>
-		<todotaskitem>
-			<description>TODO: Add your code here</description>
-			<filepath>com\zalgebar\SushiGo1\Nigiri.java</filepath>
-			<line>21</line>
-			<timestamp>1468466998</timestamp>
 		</todotaskitem>
 		<todotaskitem>
 			<description>TODO: Add your code here</description>
@@ -175,24 +169,6 @@
 			<filepath>com\zalgebar\SushiGo1\SushiGoTextIUI.java</filepath>
 			<line>141</line>
 			<timestamp>1468909779</timestamp>
-		</todotaskitem>
-		<todotaskitem>
-			<description>TODO: Add your code here</description>
-			<filepath>com\zalgebar\SushiGo1\SushiGoGame.java</filepath>
-			<line>327</line>
-			<timestamp>1469862377</timestamp>
-		</todotaskitem>
-		<todotaskitem>
-			<description>TODO: Add your code here</description>
-			<filepath>com\zalgebar\SushiGo1\SushiGoGame.java</filepath>
-			<line>339</line>
-			<timestamp>1469862377</timestamp>
-		</todotaskitem>
-		<todotaskitem>
-			<description>TODO: Add your code here</description>
-			<filepath>com\zalgebar\SushiGo1\SushiGoGame.java</filepath>
-			<line>352</line>
-			<timestamp>1469862377</timestamp>
 		</todotaskitem>
 	</tasks>
 </project>

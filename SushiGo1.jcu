@@ -7,341 +7,59 @@
 	<projects>
 		<project>
 			<label>SushiGo1</label>
-			<showfiles>true</showfiles>
+			<showfiles>false</showfiles>
 			<folderitem>
-				<path>com</path>
-			</folderitem>
-			<folderitem>
-				<path>com\zalgebar</path>
-			</folderitem>
-			<folderitem>
-				<path>com\zalgebar\SushiGo1</path>
-			</folderitem>
-			<folderitem>
-				<path>.git</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\hooks</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\info</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\logs</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\logs\refs</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\logs\refs\heads</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\logs\refs\remotes</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\logs\refs\remotes\origin</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\01</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\03</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\05</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\09</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\0e</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\0f</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\10</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\15</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\16</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\19</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\1b</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\1c</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\1f</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\27</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\28</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\29</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\34</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\3e</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\42</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\4b</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\4e</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\4f</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\50</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\56</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\57</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\5b</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\5d</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\5f</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\60</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\63</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\64</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\65</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\6a</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\6e</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\70</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\71</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\72</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\73</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\75</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\79</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\7b</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\7c</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\7d</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\7f</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\89</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\8c</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\8e</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\93</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\95</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\97</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\98</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\9d</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\a6</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\a7</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\a9</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\ac</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\ad</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\b6</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\bd</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\c1</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\c2</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\c7</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\cb</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\cd</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\ce</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\d3</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\d7</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\d8</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\db</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\dc</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\de</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\e1</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\e6</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\ea</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\eb</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\f2</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\f9</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\fd</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\info</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\objects\pack</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\refs</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\refs\heads</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\refs\remotes</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\refs\remotes\origin</path>
-			</folderitem>
-			<folderitem>
-				<path>.git\refs\tags</path>
+				<path>src</path>
 			</folderitem>
 		</project>
 	</projects>
 	<open_files>
 		<docitem>
-			<path>com\zalgebar\SushiGo1\Player.java</path>
+			<path>src\INIManager.java</path>
 			<source>true</source>
 			<index>0</index>
 			<active>false</active>
 		</docitem>
 		<docitem>
-			<path>com\zalgebar\SushiGo1\SushiGoGame.java</path>
+			<path>src\Dumplings.java</path>
 			<source>true</source>
 			<index>1</index>
 			<active>false</active>
 		</docitem>
 		<docitem>
-			<path>com\zalgebar\SushiGo1\SushiGoUI.java</path>
+			<path>src\Chopsticks.java</path>
 			<source>true</source>
 			<index>2</index>
 			<active>false</active>
 		</docitem>
 		<docitem>
-			<path>com\zalgebar\SushiGo1\SushiGoTextUI.java</path>
+			<path>src\Card.java</path>
 			<source>true</source>
 			<index>3</index>
 			<active>false</active>
 		</docitem>
 		<docitem>
-			<path>com\zalgebar\SushiGo1\MainTester.java</path>
+			<path>src\SushiGoGame.java</path>
 			<source>true</source>
 			<index>4</index>
 			<active>false</active>
 		</docitem>
 		<docitem>
-			<path>com\zalgebar\SushiGo1\Maki.java</path>
+			<path>src\SushiGoTextUI.java</path>
 			<source>true</source>
 			<index>5</index>
 			<active>false</active>
 		</docitem>
 		<docitem>
-			<path>com\zalgebar\INIManager.java</path>
+			<path>src\SushiGoUI.java</path>
 			<source>true</source>
 			<index>6</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>src\MainTester.java</path>
+			<source>true</source>
+			<index>7</index>
 			<active>true</active>
 		</docitem>
 	</open_files>

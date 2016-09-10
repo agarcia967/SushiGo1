@@ -111,7 +111,14 @@ public class SushiGoGame {
     	int minPlayer = cardCounts.get("count.min_players");
     	int maxCards = cardCounts.get("count.cards_for_max");
     	int minCards = cardCounts.get("count.cards_for_min");
-    	this.numCardsPerPlayer = numberOfPlayers;
+    	this.numCardsPerPlayer = minCards;
+    	int temp = minPlayer;
+    	while(temp<players.size()){
+    		numCardsPerPlayer--;
+    		temp++;
+    	}
+    	if(DEBUG) System.out.println("Num Players: "+players.size());
+    	if(DEBUG) System.out.println("Num Cards:   "+numCardsPerPlayer);
     }
 
     public void play(){
