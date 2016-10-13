@@ -6,7 +6,7 @@
  * @version 1.00 2016/7/10
  */
 
-package com.zalgebar.SushiGo1;
+package com.agarcia967.SushiGo1;
 
 import com.zalgebar.INIManager;
 import java.util.HashMap;
