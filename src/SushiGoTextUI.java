@@ -1,6 +1,6 @@
-package com.zalgebar.SushiGo1;
+package com.agarcia967.SushiGo1;
 
-import com.zalgebar.SushiGo1.SushiGoUI;
+import com.agarcia967.SushiGo1.SushiGoUI;
 import java.util.LinkedList;
 import java.util.Scanner;
 
