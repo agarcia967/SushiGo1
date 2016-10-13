@@ -1,5 +1,5 @@
 
-package com.zalgebar.SushiGo1;
+package com.agarcia967.SushiGo1;
 
 public class Wasabi extends Card {
 	
